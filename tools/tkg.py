@@ -1,12 +1,21 @@
 import requests
 import uuid
+import os
+import platform
+
+def clear_console():
+    # Check the operating system and clear the console accordingly
+    if platform.system() == "Windows":
+        os.system('cls')
+    else:
+        os.system('clear')
 
 def main():
-   
+    clear_console()  # Clear the console before starting
+
     uid = input("Insert UID: ")
     pw = input("Insert Password: ")
 
-    
     data = {
         'adid': str(uuid.uuid4()),
         'format': 'json',
