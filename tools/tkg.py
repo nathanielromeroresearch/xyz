@@ -54,5 +54,8 @@ def main():
     else:
         print("Access token not found in the response.")
 
+    # Prompt to exit
+    input("Press Enter to exit...")
+
 if __name__ == "__main__":
     main()
